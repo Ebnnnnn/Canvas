@@ -67,6 +67,10 @@ fun CanvasScreen(modifier: Modifier = Modifier) {
             delay(100L)
             minionsX += 5
             minionsY += 10
+            if (minionsX > CanvasWidth || minionsY > CanvaHeight) {
+                minionsX = 0f
+                minionsY = 0f
+            }
         }
     }
 
